@@ -1,5 +1,3 @@
-Alright, here's my account of the project, focusing solely on the steps I took and my reasoning:
-
 Project Title: Evaluating the Impact of Extra Tuition on Student Performance in Government Schools
 
 Project Goal: To provide evidence-based recommendations to the government regarding the effectiveness of extra tuition for improving student mathematics scores.
