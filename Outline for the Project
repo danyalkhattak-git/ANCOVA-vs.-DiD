@@ -1,0 +1,63 @@
+Project Title: Evaluating the Impact of Extra Tuition on Student Performance in Government Schools
+
+Project Goal: To provide evidence-based recommendations to the government regarding the effectiveness of extra tuition for improving student mathematics scores and attendance.
+
+Project Steps:
+
+1. Understanding the Policy Challenge and Proposed Solution (Introduction & Initial Meeting)
+
+Step 1.1: Problem Definition:
+The government presented me with a clear challenge: they wanted to improve student math scores in government schools. Their proposed solution was extra tuition for those scoring below 60%.
+Step 1.2: Initial Consultation and Policy Evaluation Strategy:
+As a consultant specializing in field experiments, I immediately suggested a Randomized Controlled Trial (RCT). I emphasized that a rigorous evaluation was crucial for making informed policy decisions.
+Step 1.3: Addressing Government Concerns and Explaining the Need for an RCT (Question 1a & 1b):
+The school administration and government officials expressed concerns about the RCT, particularly the idea of a control group.
+What is an RCT?
+I explained that an RCT is a study design where participants are randomly assigned to either a treatment group (receiving extra tuition) or a control group (not receiving it). This randomization is key.
+Why is a randomized control group necessary?
+I stressed that it creates a valid comparison, minimizing bias and allowing us to isolate the true impact of the tuition.
+Addressing Government Officials' Arguments:
+They argued that comparing treated vs. untreated or before and after scores would suffice.
+I explained the flaws:
+Simply comparing treated and untreated groups could be misleading due to inherent differences between students.
+Comparing before and after scores wouldn't account for other factors that might influence results.
+I made it clear that only an RCT could provide a reliable assessment.
+2. Verifying Randomization and Establishing Pre-Treatment Balance (Question 2a):
+
+Step 2.1: Data Acquisition:
+I received the "baseline_student_level" dataset, which contained baseline math scores and treatment assignments.
+Step 2.2: Pre-Treatment Balance Check:
+I analyzed the baseline math scores across the treatment and control groups to ensure they were statistically similar. I used t-tests and ANOVA to compare the mean scores.
+Commenting on the need: I explained that pre-treatment balance was essential to ensure that any post-treatment differences were due to the tuition, not pre-existing differences.
+Step 2.3: Randomization Assessment:
+Based on the balance check, I confirmed that the randomization was properly conducted. I documented my findings.
+3. Evaluating the Program's Impact (Question 3):
+
+Step 3.1: Data Acquisition:
+I obtained the "endline_student_level" dataset with post-treatment scores and "DiD_data.dta" for the difference-in-differences analysis.
+Step 3.2: Data Merging (Question 3a):
+I merged the "baseline" and "endline" datasets using student IDs.
+Step 3.3: ANCOVA Regression (Question 3b):
+I performed an ANCOVA regression, controlling for baseline scores, schools, and classes, to analyze the tuition's impact. I created dummy variables for the treatment groups and interpreted the coefficients.
+Step 3.4: Difference-in-Differences (DiD) Analysis (Question 3c):
+I conducted a DiD analysis, controlling for schools and classes, to further evaluate the program. I created interaction terms and interpreted the DiD coefficients.
+Step 3.5: Identifying and Explaining Unintuitive Results (Question 3d):
+I examined the ANCOVA and DiD results for any unexpected findings. I considered potential reasons, such as implementation issues, external factors, and heterogeneous effects. I considered that the simple random sampling method could have caused some of the unexpected results.
+4. Stratified Randomization and Re-Evaluation (Question 4):
+
+Step 4.1: Stratified Randomization Proposal:
+I suggested stratifying the treatment assignment by class section within each school to improve precision.
+Step 4.2: Data Acquisition:
+I aquired the "baseline_student_level_stratified" data.
+Step 4.3: Re-Run ANCOVA Regression (Question 4a):
+I re-ran the ANCOVA regression using the stratified data.
+Step 4.4: Re-Run DiD Regression (Question 4b):
+I re-ran the DiD regression using the stratified data.
+Step 4.5: Comparison and Interpretation (Question 4c):
+I compared the results from the stratified analysis with the original analysis. I discussed how stratification improved the precision of the treatment effect estimates and reduced the bias caused by simple random sampling.
+5. Report and Recommendations:
+
+Step 5.1: Report Preparation:
+I prepared a detailed report summarizing the study design, data analysis, and findings, including tables and figures.
+Step 5.2: Policy Recommendations:
+I provided evidence-based recommendations to the government regarding the effectiveness of the extra tuition program. I suggested potential improvements and alternative interventions, and I gave recommendations for scaling the program if they chose to do so.
